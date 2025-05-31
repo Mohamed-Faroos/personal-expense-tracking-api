@@ -25,6 +25,10 @@ app.use("/auth", AuthRouter);
 app.use("/expense", ExpenseRouter);
 app.use("/expense-type", ExpenseTypeRouter)
 
+app.get("/", (_req, res) => {
+    res.send("Welcome to the Expense Tracker API");
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
