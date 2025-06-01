@@ -29,6 +29,4 @@ app.get("/", (_req, res) => {
     res.send("Welcome to the Expense Tracker API");
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-})
+export default app 
