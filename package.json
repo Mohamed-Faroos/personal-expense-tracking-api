@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "api/index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node --env-file=.env index.js",
-    "build": "babel . --out-dir api --ignore node_modules",
+    "dev": "nodemon --exec babel-node --env-file=.env index.js",
+    "start": "node dist/index.js",
+    "build": "babel . --out-dir dist --ignore node_modules",
     "vercel-build": "npm run build"
   },
   "keywords": [],

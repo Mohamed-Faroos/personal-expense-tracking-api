@@ -29,4 +29,4 @@ app.get("/", (_req, res) => {
     res.send("Welcome to the Expense Tracker API");
 });
 
-export default app 
+export default app
