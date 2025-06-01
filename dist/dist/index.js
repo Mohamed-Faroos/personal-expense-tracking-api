@@ -13,7 +13,11 @@ var _auth = _interopRequireDefault(require("./routers/auth.router"));
 var _expense = _interopRequireDefault(require("./routers/expense.router"));
 var _expenseType = _interopRequireDefault(require("./routers/expenseType.router"));
 var _process;
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+function _interopRequireDefault(e) {
+  return e && e.__esModule ? e : {
+    "default": e
+  };
+}
 _dotenv["default"].config();
 var app = (0, _express["default"])();
 var port = ((_process = process) === null || _process === void 0 || (_process = _process.env) === null || _process === void 0 ? void 0 : _process.PORT) || 3000; // Default to port 3000 if process.env.PORT is undefined
